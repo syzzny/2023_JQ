@@ -1,0 +1,9 @@
+h1{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.hidden{
+    display: none;
+}
+.checked{
+    text-decoration: line-through;
+}
