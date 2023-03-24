@@ -39,3 +39,21 @@ $("#todo input[type='checkbox']").on("click", function(e){
         $("#todo").css("color", "").removeClass("checked");
     }
 })
+
+
+/*const btn = document.querySelector("#number-btns button");
+for(let i=0; i<ByteLengthQueuingStrategy.length; i++){
+    btn[i].addEventListener("click",function(e){
+        e.target.style.color = "red";
+        e.target.disabled = "true"; 
+    })
+}*/
+
+$("#number-btns button").on("click", function(){
+    $(this).css("color", "red").prop("disabled", "true");
+})
+
+// jquery로 여러개의 태그에 event 추가
+$("#number-btns button").on("click", function(){
+    $(this).css("color","red").prop("disabled","true");
+})
